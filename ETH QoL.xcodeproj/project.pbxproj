@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6F4B8F882C302461009F6294 /* login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F832C302461009F6294 /* login.js */; };
-		6F4B8F892C302461009F6294 /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F852C302461009F6294 /* utils.js */; };
 		6F4B8F8A2C302461009F6294 /* video.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F862C302461009F6294 /* video.js */; };
 		6FD9BA192C30228800E8C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA182C30228800E8C053 /* AppDelegate.swift */; };
 		6FD9BA1D2C30228800E8C053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1C2C30228800E8C053 /* Base */; };
@@ -52,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		6F4B8F832C302461009F6294 /* login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = login.js; sourceTree = "<group>"; };
-		6F4B8F852C302461009F6294 /* utils.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
 		6F4B8F862C302461009F6294 /* video.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = video.js; sourceTree = "<group>"; };
 		6FD9BA152C30228800E8C053 /* ETH QoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETH QoL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD9BA182C30228800E8C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				6FD9BA3D2C30228900E8C053 /* manifest.json */,
 				6FD9BA3F2C30228900E8C053 /* background.js */,
 				6F4B8F832C302461009F6294 /* login.js */,
-				6F4B8F852C302461009F6294 /* utils.js */,
 				6F4B8F862C302461009F6294 /* video.js */,
 			);
 			path = Resources;
@@ -259,7 +256,6 @@
 				6FD9BA3C2C30228900E8C053 /* images in Resources */,
 				6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */,
 				6F4B8F882C302461009F6294 /* login.js in Resources */,
-				6F4B8F892C302461009F6294 /* utils.js in Resources */,
 				6F4B8F8A2C302461009F6294 /* video.js in Resources */,
 				6FD9BA3A2C30228900E8C053 /* _locales in Resources */,
 			);
@@ -437,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL Extension/ETH_QoL_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 372TAJ6XCS;
@@ -468,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL Extension/ETH_QoL_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 372TAJ6XCS;
@@ -501,6 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -537,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

@@ -1,5 +1,3 @@
-import { sleep } from './utils.js';
-
 // Check if the current page is a quiz, exam, or similar
 const isRestrictedPage = () => {
     const restrictedKeywords = ['quiz', 'feedback', 'test', 'exam', 'prüfung'];
@@ -37,8 +35,6 @@ const handleMoodleLogin = () => {
 
 // Main function to handle auto-login
 async function autoLogin() {
-    await sleep(300);
-
     if (isRestrictedPage()) return;
 
     if (location.href.includes("https://www.lehrbetrieb.ethz.ch/myStudies/login.view")) {

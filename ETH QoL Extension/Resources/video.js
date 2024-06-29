@@ -1,5 +1,3 @@
-import { sleep } from './utils.js';
-
 // Function to get the URL of the highest resolution video
 const getHighestResolutionVideoUrl = () => {
     const videoLink = document.querySelector('div > ul > li.video > a');
@@ -25,7 +23,8 @@ const replaceVideoPlayer = (videoPlayerHtml) => {
     iframes.forEach(iframe => {
         const parent = iframe.parentNode;
         parent.removeChild(iframe);
-        parent.innerHTML = videoPlayerH    });
+        parent.innerHTML = videoPlayerHtml;
+    });
 };
 
 // Function to add keyboard controls to the video player
@@ -34,7 +33,7 @@ const addKeyboardControls = () => {
     if (!video) throw new Error('Video player not found');
 
     document.addEventListener('keydown', (event) => {
-        const scrubTime = 5; // Time to scrub in seconds
+        const scrubTime = 10; // Time to scrub in seconds
 
         switch(event.key) {
             case 'ArrowRight':
@@ -56,8 +55,6 @@ const addKeyboardControls = () => {
 
 // Main function to handle video player replacement
 async function replaceETHVideoPlayer() {
-    await sleep(300);
-
     if (!location.href.includes("https://video.ethz.ch/lectures/")) return;
 
     try {
