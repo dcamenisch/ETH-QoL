@@ -4,7 +4,12 @@
 
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
-    "version": "1.0",
+    "version": "1.1",
+	
+	"developer": {
+		"name": "Danny Camenisch",
+		"url": "https://github.com/dcamenisch",
+	},
 
     "icons": {
         "48": "images/icon-48.png",
@@ -15,19 +20,49 @@
     },
 
     "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
+        "scripts": ["background.js"],
+        "persistent": false
     },
 
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
-    }],
-
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.svg"
-    },
-
-    "permissions": [ ]
+	"content_scripts": [
+        {
+            "js": [ "login.js" ],
+            "matches": [
+                "*://www.lehrbetrieb.ethz.ch/myStudies/login.view*",
+                "*://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view*",
+                "*://moodle-app2.let.ethz.ch/*"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+		},
+		{
+			"js": [ "video.js" ],
+			"matches": [
+				"*://video.ethz.ch/lectures/*"
+			],
+            "run_at": "document_end",
+            "all_frames": true
+		}
+	],
+	
+	"action": {
+		"default_title": "ETH QoL",
+		"default_icon": {
+		  "16": "images/toolbar-icon-16.png",
+		  "19": "images/toolbar-icon-19.png",
+		  "32": "images/toolbar-icon-32.png",
+		  "38": "images/toolbar-icon-38.png",
+		  "48": "images/toolbar-icon-48.png",
+		  "72": "images/toolbar-icon-72.png",
+		  "512": "images/toolbar-icon-512.png"
+		}
+	},
+    
+    "web_accessible_resources": [
+        "utils.js"
+    ]
+	
+    "permissions": [
+        "activeTab"
+    ]
 }

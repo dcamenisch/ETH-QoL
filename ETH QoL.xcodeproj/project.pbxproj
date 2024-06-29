@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4B8F882C302461009F6294 /* login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F832C302461009F6294 /* login.js */; };
+		6F4B8F892C302461009F6294 /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F852C302461009F6294 /* utils.js */; };
+		6F4B8F8A2C302461009F6294 /* video.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F862C302461009F6294 /* video.js */; };
 		6FD9BA192C30228800E8C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA182C30228800E8C053 /* AppDelegate.swift */; };
 		6FD9BA1D2C30228800E8C053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1C2C30228800E8C053 /* Base */; };
 		6FD9BA1F2C30228800E8C053 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1E2C30228800E8C053 /* Icon.png */; };
@@ -21,10 +24,6 @@
 		6FD9BA3C2C30228900E8C053 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3B2C30228900E8C053 /* images */; };
 		6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3D2C30228900E8C053 /* manifest.json */; };
 		6FD9BA402C30228900E8C053 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3F2C30228900E8C053 /* background.js */; };
-		6FD9BA422C30228900E8C053 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA412C30228900E8C053 /* content.js */; };
-		6FD9BA442C30228900E8C053 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA432C30228900E8C053 /* popup.html */; };
-		6FD9BA462C30228900E8C053 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA452C30228900E8C053 /* popup.css */; };
-		6FD9BA482C30228900E8C053 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA472C30228900E8C053 /* popup.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F4B8F832C302461009F6294 /* login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = login.js; sourceTree = "<group>"; };
+		6F4B8F852C302461009F6294 /* utils.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
+		6F4B8F862C302461009F6294 /* video.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = video.js; sourceTree = "<group>"; };
 		6FD9BA152C30228800E8C053 /* ETH QoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETH QoL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD9BA182C30228800E8C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD9BA1C2C30228800E8C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -69,10 +71,6 @@
 		6FD9BA3B2C30228900E8C053 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		6FD9BA3D2C30228900E8C053 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		6FD9BA3F2C30228900E8C053 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		6FD9BA412C30228900E8C053 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		6FD9BA432C30228900E8C053 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		6FD9BA452C30228900E8C053 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		6FD9BA472C30228900E8C053 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		6FD9BA492C30228900E8C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD9BA4A2C30228900E8C053 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,10 +154,9 @@
 				6FD9BA3B2C30228900E8C053 /* images */,
 				6FD9BA3D2C30228900E8C053 /* manifest.json */,
 				6FD9BA3F2C30228900E8C053 /* background.js */,
-				6FD9BA412C30228900E8C053 /* content.js */,
-				6FD9BA432C30228900E8C053 /* popup.html */,
-				6FD9BA452C30228900E8C053 /* popup.css */,
-				6FD9BA472C30228900E8C053 /* popup.js */,
+				6F4B8F832C302461009F6294 /* login.js */,
+				6F4B8F852C302461009F6294 /* utils.js */,
+				6F4B8F862C302461009F6294 /* video.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -259,13 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD9BA402C30228900E8C053 /* background.js in Resources */,
-				6FD9BA462C30228900E8C053 /* popup.css in Resources */,
-				6FD9BA442C30228900E8C053 /* popup.html in Resources */,
 				6FD9BA3C2C30228900E8C053 /* images in Resources */,
 				6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */,
+				6F4B8F882C302461009F6294 /* login.js in Resources */,
+				6F4B8F892C302461009F6294 /* utils.js in Resources */,
+				6F4B8F8A2C302461009F6294 /* video.js in Resources */,
 				6FD9BA3A2C30228900E8C053 /* _locales in Resources */,
-				6FD9BA422C30228900E8C053 /* content.js in Resources */,
-				6FD9BA482C30228900E8C053 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +508,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -547,6 +544,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

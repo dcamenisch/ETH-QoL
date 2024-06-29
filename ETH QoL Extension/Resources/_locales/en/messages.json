@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is ETH QoL Extension. You should tell us what your extension does here.",
+        "message": "This extension enables skipping the login button on myStudies and Moodle, and replaces the video player on video.ethz.ch",
         "description": "Description of what the extension does."
     }
 }
