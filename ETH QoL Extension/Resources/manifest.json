@@ -42,7 +42,15 @@
 			],
             "run_at": "document_end",
             "all_frames": true
-		}
+		},
+        {
+            "js": [ "moodle.js" ],
+            "matches": [
+                "*://moodle-app2.let.ethz.ch/*"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
 	],
 	
 	"action": {
