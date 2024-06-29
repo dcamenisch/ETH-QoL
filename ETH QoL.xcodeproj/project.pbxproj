@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FD9BA192C30228800E8C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA182C30228800E8C053 /* AppDelegate.swift */; };
+		6FD9BA1D2C30228800E8C053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1C2C30228800E8C053 /* Base */; };
+		6FD9BA1F2C30228800E8C053 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1E2C30228800E8C053 /* Icon.png */; };
+		6FD9BA212C30228800E8C053 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA202C30228800E8C053 /* Style.css */; };
+		6FD9BA232C30228800E8C053 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA222C30228800E8C053 /* Script.js */; };
+		6FD9BA252C30228800E8C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA242C30228800E8C053 /* ViewController.swift */; };
+		6FD9BA282C30228800E8C053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA272C30228800E8C053 /* Base */; };
+		6FD9BA2A2C30228900E8C053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA292C30228900E8C053 /* Assets.xcassets */; };
+		6FD9BA322C30228900E8C053 /* ETH QoL Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6FD9BA312C30228900E8C053 /* ETH QoL Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6FD9BA372C30228900E8C053 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA362C30228900E8C053 /* SafariWebExtensionHandler.swift */; };
+		6FD9BA3A2C30228900E8C053 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA392C30228900E8C053 /* _locales */; };
+		6FD9BA3C2C30228900E8C053 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3B2C30228900E8C053 /* images */; };
+		6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3D2C30228900E8C053 /* manifest.json */; };
+		6FD9BA402C30228900E8C053 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3F2C30228900E8C053 /* background.js */; };
+		6FD9BA422C30228900E8C053 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA412C30228900E8C053 /* content.js */; };
+		6FD9BA442C30228900E8C053 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA432C30228900E8C053 /* popup.html */; };
+		6FD9BA462C30228900E8C053 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA452C30228900E8C053 /* popup.css */; };
+		6FD9BA482C30228900E8C053 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA472C30228900E8C053 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FD9BA332C30228900E8C053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FD9BA0D2C30228800E8C053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD9BA302C30228900E8C053;
+			remoteInfo = "ETH QoL Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FD9BA502C30228900E8C053 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6FD9BA322C30228900E8C053 /* ETH QoL Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6FD9BA152C30228800E8C053 /* ETH QoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETH QoL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD9BA182C30228800E8C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FD9BA1C2C30228800E8C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		6FD9BA1E2C30228800E8C053 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6FD9BA202C30228800E8C053 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		6FD9BA222C30228800E8C053 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		6FD9BA242C30228800E8C053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FD9BA272C30228800E8C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FD9BA292C30228900E8C053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FD9BA2B2C30228900E8C053 /* ETH_QoL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL.entitlements; sourceTree = "<group>"; };
+		6FD9BA2C2C30228900E8C053 /* ETH QoL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ETH QoL.entitlements"; sourceTree = "<group>"; };
+		6FD9BA312C30228900E8C053 /* ETH QoL Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ETH QoL Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD9BA362C30228900E8C053 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		6FD9BA392C30228900E8C053 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		6FD9BA3B2C30228900E8C053 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		6FD9BA3D2C30228900E8C053 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		6FD9BA3F2C30228900E8C053 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		6FD9BA412C30228900E8C053 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		6FD9BA432C30228900E8C053 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		6FD9BA452C30228900E8C053 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		6FD9BA472C30228900E8C053 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		6FD9BA492C30228900E8C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD9BA4A2C30228900E8C053 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FD9BA122C30228800E8C053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD9BA2E2C30228900E8C053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FD9BA0C2C30228800E8C053 = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA172C30228800E8C053 /* ETH QoL */,
+				6FD9BA352C30228900E8C053 /* ETH QoL Extension */,
+				6FD9BA162C30228800E8C053 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FD9BA162C30228800E8C053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA152C30228800E8C053 /* ETH QoL.app */,
+				6FD9BA312C30228900E8C053 /* ETH QoL Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FD9BA172C30228800E8C053 /* ETH QoL */ = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA182C30228800E8C053 /* AppDelegate.swift */,
+				6FD9BA242C30228800E8C053 /* ViewController.swift */,
+				6FD9BA262C30228800E8C053 /* Main.storyboard */,
+				6FD9BA292C30228900E8C053 /* Assets.xcassets */,
+				6FD9BA2B2C30228900E8C053 /* ETH_QoL.entitlements */,
+				6FD9BA2C2C30228900E8C053 /* ETH QoL.entitlements */,
+				6FD9BA1A2C30228800E8C053 /* Resources */,
+			);
+			path = "ETH QoL";
+			sourceTree = "<group>";
+		};
+		6FD9BA1A2C30228800E8C053 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA1B2C30228800E8C053 /* Main.html */,
+				6FD9BA1E2C30228800E8C053 /* Icon.png */,
+				6FD9BA202C30228800E8C053 /* Style.css */,
+				6FD9BA222C30228800E8C053 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6FD9BA352C30228900E8C053 /* ETH QoL Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA362C30228900E8C053 /* SafariWebExtensionHandler.swift */,
+				6FD9BA492C30228900E8C053 /* Info.plist */,
+				6FD9BA4A2C30228900E8C053 /* ETH_QoL_Extension.entitlements */,
+				6FD9BA382C30228900E8C053 /* Resources */,
+			);
+			path = "ETH QoL Extension";
+			sourceTree = "<group>";
+		};
+		6FD9BA382C30228900E8C053 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FD9BA392C30228900E8C053 /* _locales */,
+				6FD9BA3B2C30228900E8C053 /* images */,
+				6FD9BA3D2C30228900E8C053 /* manifest.json */,
+				6FD9BA3F2C30228900E8C053 /* background.js */,
+				6FD9BA412C30228900E8C053 /* content.js */,
+				6FD9BA432C30228900E8C053 /* popup.html */,
+				6FD9BA452C30228900E8C053 /* popup.css */,
+				6FD9BA472C30228900E8C053 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FD9BA142C30228800E8C053 /* ETH QoL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD9BA512C30228900E8C053 /* Build configuration list for PBXNativeTarget "ETH QoL" */;
+			buildPhases = (
+				6FD9BA112C30228800E8C053 /* Sources */,
+				6FD9BA122C30228800E8C053 /* Frameworks */,
+				6FD9BA132C30228800E8C053 /* Resources */,
+				6FD9BA502C30228900E8C053 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD9BA342C30228900E8C053 /* PBXTargetDependency */,
+			);
+			name = "ETH QoL";
+			productName = "ETH QoL";
+			productReference = 6FD9BA152C30228800E8C053 /* ETH QoL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FD9BA302C30228900E8C053 /* ETH QoL Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD9BA4D2C30228900E8C053 /* Build configuration list for PBXNativeTarget "ETH QoL Extension" */;
+			buildPhases = (
+				6FD9BA2D2C30228900E8C053 /* Sources */,
+				6FD9BA2E2C30228900E8C053 /* Frameworks */,
+				6FD9BA2F2C30228900E8C053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ETH QoL Extension";
+			productName = "ETH QoL Extension";
+			productReference = 6FD9BA312C30228900E8C053 /* ETH QoL Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FD9BA0D2C30228800E8C053 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					6FD9BA142C30228800E8C053 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					6FD9BA302C30228900E8C053 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 6FD9BA102C30228800E8C053 /* Build configuration list for PBXProject "ETH QoL" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FD9BA0C2C30228800E8C053;
+			productRefGroup = 6FD9BA162C30228800E8C053 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FD9BA142C30228800E8C053 /* ETH QoL */,
+				6FD9BA302C30228900E8C053 /* ETH QoL Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FD9BA132C30228800E8C053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD9BA1F2C30228800E8C053 /* Icon.png in Resources */,
+				6FD9BA232C30228800E8C053 /* Script.js in Resources */,
+				6FD9BA1D2C30228800E8C053 /* Base in Resources */,
+				6FD9BA212C30228800E8C053 /* Style.css in Resources */,
+				6FD9BA2A2C30228900E8C053 /* Assets.xcassets in Resources */,
+				6FD9BA282C30228800E8C053 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD9BA2F2C30228900E8C053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD9BA402C30228900E8C053 /* background.js in Resources */,
+				6FD9BA462C30228900E8C053 /* popup.css in Resources */,
+				6FD9BA442C30228900E8C053 /* popup.html in Resources */,
+				6FD9BA3C2C30228900E8C053 /* images in Resources */,
+				6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */,
+				6FD9BA3A2C30228900E8C053 /* _locales in Resources */,
+				6FD9BA422C30228900E8C053 /* content.js in Resources */,
+				6FD9BA482C30228900E8C053 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FD9BA112C30228800E8C053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD9BA252C30228800E8C053 /* ViewController.swift in Sources */,
+				6FD9BA192C30228800E8C053 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD9BA2D2C30228900E8C053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD9BA372C30228900E8C053 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FD9BA342C30228900E8C053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FD9BA302C30228900E8C053 /* ETH QoL Extension */;
+			targetProxy = 6FD9BA332C30228900E8C053 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FD9BA1B2C30228800E8C053 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FD9BA1C2C30228800E8C053 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		6FD9BA262C30228800E8C053 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FD9BA272C30228800E8C053 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FD9BA4B2C30228900E8C053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FD9BA4C2C30228900E8C053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6FD9BA4E2C30228900E8C053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ETH QoL Extension/ETH_QoL_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ETH QoL Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6FD9BA4F2C30228900E8C053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ETH QoL Extension/ETH_QoL_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ETH QoL Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6FD9BA522C30228900E8C053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6FD9BA532C30228900E8C053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ETH QoL/ETH QoL.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FD9BA102C30228800E8C053 /* Build configuration list for PBXProject "ETH QoL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD9BA4B2C30228900E8C053 /* Debug */,
+				6FD9BA4C2C30228900E8C053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD9BA4D2C30228900E8C053 /* Build configuration list for PBXNativeTarget "ETH QoL Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD9BA4E2C30228900E8C053 /* Debug */,
+				6FD9BA4F2C30228900E8C053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD9BA512C30228900E8C053 /* Build configuration list for PBXNativeTarget "ETH QoL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD9BA522C30228900E8C053 /* Debug */,
+				6FD9BA532C30228900E8C053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FD9BA0D2C30228800E8C053 /* Project object */;
+}
