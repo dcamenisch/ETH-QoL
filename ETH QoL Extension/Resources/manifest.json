@@ -50,7 +50,16 @@
             ],
             "run_at": "document_end",
             "all_frames": true
-        }
+        },
+        {
+            "js": [ "mystudies.js" ],
+            "matches": [
+                "*://www.lehrbetrieb.ethz.ch/myStudies/studLeistungsueberblick*",
+                "*://www.vorlesungen.ethz.ch/*"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        },
 	],
 	
 	"action": {
@@ -63,14 +72,6 @@
 		  "48": "images/toolbar-icon-48.png",
 		  "72": "images/toolbar-icon-72.png",
 		  "512": "images/toolbar-icon-512.png"
-		}
+		},
 	},
-    
-    "web_accessible_resources": [
-        "utils.js"
-    ],
-	
-    "permissions": [
-        "activeTab"
-    ],
 }

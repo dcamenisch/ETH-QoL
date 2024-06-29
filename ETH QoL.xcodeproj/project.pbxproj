@@ -24,6 +24,7 @@
 		6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3D2C30228900E8C053 /* manifest.json */; };
 		6FD9BA402C30228900E8C053 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3F2C30228900E8C053 /* background.js */; };
 		6FF953F32C304E8000881EFA /* moodle.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F22C304E8000881EFA /* moodle.js */; };
+		6FF953FE2C30534E00881EFA /* mystudies.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953FD2C30534E00881EFA /* mystudies.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,11 @@
 		6FD9BA492C30228900E8C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD9BA4A2C30228900E8C053 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
 		6FF953F22C304E8000881EFA /* moodle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = moodle.js; sourceTree = "<group>"; };
+		6FF953F42C30506500881EFA /* vvz.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz.js; sourceTree = "<group>"; };
+		6FF953F62C30511400881EFA /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		6FF953F72C30511400881EFA /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		6FF953F82C30511400881EFA /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		6FF953FD2C30534E00881EFA /* mystudies.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = mystudies.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,11 @@
 				6F4B8F832C302461009F6294 /* login.js */,
 				6F4B8F862C302461009F6294 /* video.js */,
 				6FF953F22C304E8000881EFA /* moodle.js */,
+				6FF953FD2C30534E00881EFA /* mystudies.js */,
+				6FF953F42C30506500881EFA /* vvz.js */,
+				6FF953F72C30511400881EFA /* popup.html */,
+				6FF953F62C30511400881EFA /* popup.css */,
+				6FF953F82C30511400881EFA /* popup.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,11 +268,16 @@
 			files = (
 				6FD9BA402C30228900E8C053 /* background.js in Resources */,
 				6FD9BA3C2C30228900E8C053 /* images in Resources */,
+				6FF953F92C30511400881EFA /* popup.css in Resources */,
+				6FF953FA2C30511400881EFA /* popup.js in Resources */,
+				6FF953FB2C30511400881EFA /* popup.html in Resources */,
 				6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */,
+				6FF953FE2C30534E00881EFA /* mystudies.js in Resources */,
 				6F4B8F882C302461009F6294 /* login.js in Resources */,
 				6F4B8F8A2C302461009F6294 /* video.js in Resources */,
 				6FD9BA3A2C30228900E8C053 /* _locales in Resources */,
 				6FF953F32C304E8000881EFA /* moodle.js in Resources */,
+				6FF953F52C30506500881EFA /* vvz.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
