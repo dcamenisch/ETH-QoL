@@ -4,19 +4,6 @@ const isRestrictedPage = () => {
     return restrictedKeywords.some(keyword => location.href.includes(keyword));
 };
 
-// Handle myStudies login page
-const handleMyStudiesLogin = () => {
-    const startButton = document.querySelector('input[value="Start"]');
-    if (startButton) startButton.click();
-};
-
-// Handle invalid session on myStudies
-const handleInvalidSession = () => {
-    if (location.href.includes("https://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view")) {
-        location.href = "https://www.lehrbetrieb.ethz.ch/myStudies/login.view";
-    }
-};
-
 // Handle Moodle login page
 const handleMoodleLogin = () => {
     const selectElement = document.getElementById('idp');
@@ -37,11 +24,7 @@ const handleMoodleLogin = () => {
 async function autoLogin() {
     if (isRestrictedPage()) return;
 
-    if (location.href.includes("https://www.lehrbetrieb.ethz.ch/myStudies/login.view")) {
-        handleMyStudiesLogin();
-    } else if (location.href.includes("https://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view")) {
-        handleInvalidSession();
-    } else if (location.href.includes("https://moodle-app2.let.ethz.ch/auth/shibboleth/login.php")) {
+    if (location.href.includes("https://moodle-app2.let.ethz.ch/auth/shibboleth/login.php")) {
         handleMoodleLogin();
     }
 }

@@ -25,44 +25,51 @@
     },
 
 	"content_scripts": [
-        {
-            "js": [ "login.js" ],
-            "matches": [
-                "*://www.lehrbetrieb.ethz.ch/myStudies/login.view*",
-                "*://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view*",
-                "*://moodle-app2.let.ethz.ch/*"
-            ],
-            "run_at": "document_end",
-            "all_frames": true
-		},
 		{
-			"js": [ "video.js" ],
 			"matches": [
 				"*://video.ethz.ch/lectures/*"
 			],
+            "js": [ "video.js" ],
             "run_at": "document_end",
             "all_frames": true
 		},
         {
-            "js": [ "moodle.js" ],
             "matches": [
                 "*://moodle-app2.let.ethz.ch/*"
+            ],
+            "js": [
+                "moodle_login.js",
+                "moodle_style.js"
             ],
             "run_at": "document_end",
             "all_frames": true
         },
         {
-            "js": [ "mystudies.js" ],
             "matches": [
+                "*://www.lehrbetrieb.ethz.ch/myStudies/login.view*",
                 "*://www.lehrbetrieb.ethz.ch/myStudies/studLeistungsueberblick*",
+                "*://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view*",
+            ],
+            "js": [
+                "mystudies_grades.js",
+                "mystudies_login.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        },
+        {
+            "matches": [
+                "*://www.vvz.ethz.ch/*",
                 "*://www.vorlesungen.ethz.ch/*"
             ],
+            "js": [ "vvz_cr_links.js" ],
             "run_at": "document_end",
             "all_frames": true
         },
 	],
 	
 	"action": {
+        "default_popup": "popup.html",
 		"default_title": "ETH QoL",
 		"default_icon": {
 		  "16": "images/toolbar-icon-16.png",
