@@ -62,7 +62,11 @@
                 "*://www.vvz.ethz.ch/*",
                 "*://www.vorlesungen.ethz.ch/*"
             ],
-            "js": [ "vvz_cr_links.js" ],
+            "js": [
+                "vvz_cr_link.js",
+                "vvz_cr_rating.js",
+                "vvz_style.js"
+            ],
             "run_at": "document_end",
             "all_frames": true
         },

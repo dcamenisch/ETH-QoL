@@ -24,8 +24,10 @@
 		6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3D2C30228900E8C053 /* manifest.json */; };
 		6FD9BA402C30228900E8C053 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA3F2C30228900E8C053 /* background.js */; };
 		6FE30DC42C3179FE00CA3B10 /* moodle_login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FE30DC32C3179FE00CA3B10 /* moodle_login.js */; };
+		6FE30DC62C31826800CA3B10 /* vvz_cr_rating.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FE30DC52C31826800CA3B10 /* vvz_cr_rating.js */; };
+		6FE30DC82C3185AD00CA3B10 /* vvz_style.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FE30DC72C3185AD00CA3B10 /* vvz_style.js */; };
 		6FF953F32C304E8000881EFA /* moodle_style.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F22C304E8000881EFA /* moodle_style.js */; };
-		6FF953F52C30506500881EFA /* vvz_cr_links.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F42C30506500881EFA /* vvz_cr_links.js */; };
+		6FF953F52C30506500881EFA /* vvz_cr_link.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F42C30506500881EFA /* vvz_cr_link.js */; };
 		6FF953F92C30511400881EFA /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F62C30511400881EFA /* popup.css */; };
 		6FF953FA2C30511400881EFA /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F82C30511400881EFA /* popup.js */; };
 		6FF953FB2C30511400881EFA /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FF953F72C30511400881EFA /* popup.html */; };
@@ -79,8 +81,10 @@
 		6FD9BA492C30228900E8C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD9BA4A2C30228900E8C053 /* ETH_QoL_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETH_QoL_Extension.entitlements; sourceTree = "<group>"; };
 		6FE30DC32C3179FE00CA3B10 /* moodle_login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = moodle_login.js; sourceTree = "<group>"; };
+		6FE30DC52C31826800CA3B10 /* vvz_cr_rating.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz_cr_rating.js; sourceTree = "<group>"; };
+		6FE30DC72C3185AD00CA3B10 /* vvz_style.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz_style.js; sourceTree = "<group>"; };
 		6FF953F22C304E8000881EFA /* moodle_style.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = moodle_style.js; sourceTree = "<group>"; };
-		6FF953F42C30506500881EFA /* vvz_cr_links.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz_cr_links.js; sourceTree = "<group>"; };
+		6FF953F42C30506500881EFA /* vvz_cr_link.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz_cr_link.js; sourceTree = "<group>"; };
 		6FF953F62C30511400881EFA /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		6FF953F72C30511400881EFA /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		6FF953F82C30511400881EFA /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
@@ -171,7 +175,9 @@
 				6FF953F22C304E8000881EFA /* moodle_style.js */,
 				6FF953FD2C30534E00881EFA /* mystudies_grades.js */,
 				6F4B8F832C302461009F6294 /* mystudies_login.js */,
-				6FF953F42C30506500881EFA /* vvz_cr_links.js */,
+				6FF953F42C30506500881EFA /* vvz_cr_link.js */,
+				6FE30DC52C31826800CA3B10 /* vvz_cr_rating.js */,
+				6FE30DC72C3185AD00CA3B10 /* vvz_style.js */,
 				6FF953F72C30511400881EFA /* popup.html */,
 				6FF953F62C30511400881EFA /* popup.css */,
 				6FF953F82C30511400881EFA /* popup.js */,
@@ -273,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE30DC62C31826800CA3B10 /* vvz_cr_rating.js in Resources */,
 				6FD9BA402C30228900E8C053 /* background.js in Resources */,
 				6FD9BA3C2C30228900E8C053 /* images in Resources */,
 				6FF953F92C30511400881EFA /* popup.css in Resources */,
@@ -284,8 +291,9 @@
 				6F4B8F8A2C302461009F6294 /* video.js in Resources */,
 				6FD9BA3A2C30228900E8C053 /* _locales in Resources */,
 				6FE30DC42C3179FE00CA3B10 /* moodle_login.js in Resources */,
+				6FE30DC82C3185AD00CA3B10 /* vvz_style.js in Resources */,
 				6FF953F32C304E8000881EFA /* moodle_style.js in Resources */,
-				6FF953F52C30506500881EFA /* vvz_cr_links.js in Resources */,
+				6FF953F52C30506500881EFA /* vvz_cr_link.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
