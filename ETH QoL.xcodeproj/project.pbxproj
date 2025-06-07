@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F06512D2C41699400BF5FDC /* comsol_login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F06512C2C41698F00BF5FDC /* comsol_login.js */; };
 		6F4B8F882C302461009F6294 /* mystudies_login.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F832C302461009F6294 /* mystudies_login.js */; };
 		6F4B8F8A2C302461009F6294 /* video.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B8F862C302461009F6294 /* video.js */; };
+		6FB5F4402C416EC00036255D /* vvz_search.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FB5F43F2C416EC00036255D /* vvz_search.js */; };
 		6FD9BA192C30228800E8C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9BA182C30228800E8C053 /* AppDelegate.swift */; };
 		6FD9BA1D2C30228800E8C053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1C2C30228800E8C053 /* Base */; };
 		6FD9BA1F2C30228800E8C053 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD9BA1E2C30228800E8C053 /* Icon.png */; };
@@ -59,8 +61,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F06512C2C41698F00BF5FDC /* comsol_login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = comsol_login.js; sourceTree = "<group>"; };
 		6F4B8F832C302461009F6294 /* mystudies_login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = mystudies_login.js; sourceTree = "<group>"; };
 		6F4B8F862C302461009F6294 /* video.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = video.js; sourceTree = "<group>"; };
+		6FB5F43F2C416EC00036255D /* vvz_search.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = vvz_search.js; sourceTree = "<group>"; };
 		6FD9BA152C30228800E8C053 /* ETH QoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETH QoL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD9BA182C30228800E8C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD9BA1C2C30228800E8C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 				6FD9BA3B2C30228900E8C053 /* images */,
 				6FD9BA3D2C30228900E8C053 /* manifest.json */,
 				6FD9BA3F2C30228900E8C053 /* background.js */,
+				6F06512C2C41698F00BF5FDC /* comsol_login.js */,
 				6F4B8F862C302461009F6294 /* video.js */,
 				6FE30DC32C3179FE00CA3B10 /* moodle_login.js */,
 				6FF953F22C304E8000881EFA /* moodle_style.js */,
@@ -177,6 +182,7 @@
 				6F4B8F832C302461009F6294 /* mystudies_login.js */,
 				6FF953F42C30506500881EFA /* vvz_cr_link.js */,
 				6FE30DC52C31826800CA3B10 /* vvz_cr_rating.js */,
+				6FB5F43F2C416EC00036255D /* vvz_search.js */,
 				6FE30DC72C3185AD00CA3B10 /* vvz_style.js */,
 				6FF953F72C30511400881EFA /* popup.html */,
 				6FF953F62C30511400881EFA /* popup.css */,
@@ -232,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					6FD9BA142C30228800E8C053 = {
 						CreatedOnToolsVersion = 16.0;
@@ -280,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FE30DC62C31826800CA3B10 /* vvz_cr_rating.js in Resources */,
+				6F06512D2C41699400BF5FDC /* comsol_login.js in Resources */,
 				6FD9BA402C30228900E8C053 /* background.js in Resources */,
 				6FD9BA3C2C30228900E8C053 /* images in Resources */,
 				6FF953F92C30511400881EFA /* popup.css in Resources */,
+				6FB5F4402C416EC00036255D /* vvz_search.js in Resources */,
 				6FF953FA2C30511400881EFA /* popup.js in Resources */,
 				6FF953FB2C30511400881EFA /* popup.html in Resources */,
 				6FD9BA3E2C30228900E8C053 /* manifest.json in Resources */,
@@ -381,7 +389,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F2XKQN9YY8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -444,7 +454,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = F2XKQN9YY8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -472,7 +484,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ETH QoL Extension/Info.plist";
@@ -483,13 +495,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.eth-qol.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -504,7 +516,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ETH QoL Extension/Info.plist";
@@ -515,13 +527,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.eth-qol.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -539,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
@@ -551,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -559,7 +571,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.eth-qol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -576,7 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 372TAJ6XCS;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "ETH QoL";
@@ -588,7 +600,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -596,7 +608,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.ETH-QoL";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.dcamenisch.eth-qol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

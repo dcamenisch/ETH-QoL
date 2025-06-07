@@ -1,16 +1,13 @@
 {
     "manifest_version": 3,
     "default_locale": "en",
-
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
     "version": "1.0",
-	
-	"developer": {
-		"name": "Danny Camenisch",
-		"url": "https://github.com/dcamenisch",
-	},
-
+    "developer": {
+        "name": "Danny Camenisch",
+        "url": "https://github.com/dcamenisch"
+    },
     "icons": {
         "48": "images/icon-48.png",
         "96": "images/icon-96.png",
@@ -18,21 +15,23 @@
         "256": "images/icon-256.png",
         "512": "images/icon-512.png"
     },
-
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "service_worker": "background.js"
     },
-
-	"content_scripts": [
-		{
-			"matches": [
-				"*://video.ethz.ch/lectures/*"
-			],
-            "js": [ "video.js" ],
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://video.ethz.ch/lectures/*"
+            ],
+            "js": [
+                "video.js"
+            ],
             "run_at": "document_end",
             "all_frames": true
-		},
+        },
         {
             "matches": [
                 "*://moodle-app2.let.ethz.ch/*"
@@ -48,7 +47,7 @@
             "matches": [
                 "*://www.lehrbetrieb.ethz.ch/myStudies/login.view*",
                 "*://www.lehrbetrieb.ethz.ch/myStudies/studLeistungsueberblick*",
-                "*://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view*",
+                "*://www.lehrbetrieb.ethz.ch/myStudies/studSessionException.view*"
             ],
             "js": [
                 "mystudies_grades.js",
@@ -59,30 +58,41 @@
         },
         {
             "matches": [
+                "*://vvz.ethz.ch/*",
                 "*://www.vvz.ethz.ch/*",
                 "*://www.vorlesungen.ethz.ch/*"
             ],
             "js": [
                 "vvz_cr_link.js",
                 "vvz_cr_rating.js",
+                "vvz_search.js",
                 "vvz_style.js"
             ],
             "run_at": "document_end",
             "all_frames": true
         },
-	],
-	
-	"action": {
+        {
+            "matches": [
+                "*://exams.vis.ethz.ch/*"
+            ],
+            "js": [
+                "comsol_login.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "action": {
         "default_popup": "popup.html",
-		"default_title": "ETH QoL",
-		"default_icon": {
-		  "16": "images/toolbar-icon-16.png",
-		  "19": "images/toolbar-icon-19.png",
-		  "32": "images/toolbar-icon-32.png",
-		  "38": "images/toolbar-icon-38.png",
-		  "48": "images/toolbar-icon-48.png",
-		  "72": "images/toolbar-icon-72.png",
-		  "512": "images/toolbar-icon-512.png"
-		},
-	},
+        "default_title": "ETH QoL",
+        "default_icon": {
+            "16": "images/toolbar-icon-16.png",
+            "19": "images/toolbar-icon-19.png",
+            "32": "images/toolbar-icon-32.png",
+            "38": "images/toolbar-icon-38.png",
+            "48": "images/toolbar-icon-48.png",
+            "72": "images/toolbar-icon-72.png",
+            "512": "images/toolbar-icon-512.png"
+        }
+    }
 }

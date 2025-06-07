@@ -12,9 +12,9 @@ async function addCourseRatings(row, courseNr) {
     try {
         const response = await fetch(`${API_RATING_URL}${courseNr}`);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        
+
         const data = JSON.parse(JSON.parse(await response.text()));
-        
+
         Object.values(data[0]).forEach(value => {
             const td = document.createElement("td");
             if (value !== null) {
@@ -28,9 +28,12 @@ async function addCourseRatings(row, courseNr) {
 }
 
 async function addCourseReviewRating() {
+    if (location.href.includes("lerneinheit.view"))
+        return;
+
     const levels = document.getElementsByClassName("td-level");
     Array.from(levels).forEach(td => td.colSpan = 12);
-    
+
     const RATING_DESCRIPTIONS = [
         "Would recommend it",
         "Interesting content",
@@ -38,7 +41,7 @@ async function addCourseReviewRating() {
         "Appropriate amount of effort",
         "Amount and quality of resources"
     ];
-    
+
     const trs = document.querySelectorAll("tr");
     for (const row of trs) {
         const tds = row.getElementsByTagName("td");
